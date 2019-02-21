@@ -13,6 +13,7 @@
 		2FB27433221D96730024FAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB27432221D96730024FAB8 /* Assets.xcassets */; };
 		2FB27436221D96730024FAB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB27434221D96730024FAB8 /* LaunchScreen.storyboard */; };
 		2FB27441221D96730024FAB8 /* Ex_iOS_CPP_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB27440221D96730024FAB8 /* Ex_iOS_CPP_SwiftUITests.swift */; };
+		2FB2744E221D9A050024FAB8 /* Foo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2744D221D9A050024FAB8 /* Foo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		2FB2743C221D96730024FAB8 /* Ex_iOS_CPP_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ex_iOS_CPP_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB27440221D96730024FAB8 /* Ex_iOS_CPP_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex_iOS_CPP_SwiftUITests.swift; sourceTree = "<group>"; };
 		2FB27442221D96730024FAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB2744B221D99F50024FAB8 /* Foo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		2FB2744C221D9A050024FAB8 /* Ex_iOS_CPP_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ex_iOS_CPP_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		2FB2744D221D9A050024FAB8 /* Foo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Foo.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,9 @@
 				2FB27432221D96730024FAB8 /* Assets.xcassets */,
 				2FB27434221D96730024FAB8 /* LaunchScreen.storyboard */,
 				2FB27437221D96730024FAB8 /* Info.plist */,
+				2FB2744B221D99F50024FAB8 /* Foo.h */,
+				2FB2744D221D9A050024FAB8 /* Foo.cpp */,
+				2FB2744C221D9A050024FAB8 /* Ex_iOS_CPP_Swift-Bridging-Header.h */,
 			);
 			path = Ex_iOS_CPP_Swift;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 				TargetAttributes = {
 					2FB27427221D96700024FAB8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					2FB2743B221D96730024FAB8 = {
 						CreatedOnToolsVersion = 10.1;
@@ -197,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB2744E221D9A050024FAB8 /* Foo.cpp in Sources */,
 				2FB2742E221D96700024FAB8 /* ViewController.swift in Sources */,
 				2FB2742C221D96700024FAB8 /* AppDelegate.swift in Sources */,
 			);
@@ -360,15 +369,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N6XS9R7NVV;
+				DEVELOPMENT_TEAM = WFK3HSSFNJ;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Ex_iOS_CPP_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Ex_iOS_CPP_Swift";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "asc.Ex-iOS-CPP-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ex_iOS_CPP_Swift/Ex_iOS_CPP_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,15 +393,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N6XS9R7NVV;
+				DEVELOPMENT_TEAM = WFK3HSSFNJ;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Ex_iOS_CPP_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Ex_iOS_CPP_Swift";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "asc.Ex-iOS-CPP-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ex_iOS_CPP_Swift/Ex_iOS_CPP_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

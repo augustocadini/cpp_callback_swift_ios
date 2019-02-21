@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Ex_iOS_CPP_Swift.xcodeproj">
+      location = "group:/Users/augustosansoncadini/Documents/XcodeProjects/Ex_iOS_CPP_Swift/Ex_iOS_CPP_Swift/libcurl.a">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
