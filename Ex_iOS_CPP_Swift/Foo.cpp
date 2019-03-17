@@ -7,7 +7,6 @@
 //
  
 #include <iostream>
-#include <future>
 #include <unistd.h>
 #include "Ex_iOS_CPP_Swift-Bridging-Header.h"
 
